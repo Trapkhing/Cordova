@@ -7,7 +7,7 @@ body {
 
 .header {
   background: #2e333b;
-  padding: 1rem;
+  padding: 1.4rem;
   color: white;
 }
 
@@ -145,8 +145,8 @@ select {
 .submit-btn {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: #2e333b;
-  color: white;
+  background-color: #d2d3d6;
+  color: rgb(7, 7, 7);
   border: none;
   font-size: 1rem;
   border-radius: 5px;
@@ -197,47 +197,40 @@ select {
   background-color: #3399ff;
   transition: width 0.4s ease;
 }
+
 .progress-bar.hidden {
   opacity: 0;
 }
 
+
 .page-header {
-  max-width: 600px;
-  margin: 2rem auto 1.5rem;
-  padding: 0 1rem;
+  padding: 0.000002rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0rem;
+  background-color: #cdcbcb;
+  text-align: left;
 }
+
 
 .page-header h2 {
-  font-size: 1.75rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #1a1a1a;
-  margin-bottom: 0.5rem;
 }
 
-.page-header p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-  margin: 0;
-}
 
 @media (max-width: 600px) {
   .page-header {
-    margin-top: 0.0rem;
+    margin-top: 0rem;
   }
 
   .page-header h2 {
-    font-size: 1.9rem;
-  }
-
-  .page-header p {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
   }
 }
 
-
 .form-container {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 @media (max-width: 400px) {
