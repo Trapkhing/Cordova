@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document Upload - Concora Credit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Concora <span>credit</span></div>
+  </header>
+
+  <section class="form-container">
+  <div class="page-header">
+  <h2>Document Upload</h2>
+</div>
+<p>Enter your name as it appears on your application or account. You have not completed this form until you click on the submit button.</p>
+    <form id="uploadForm">
+      <label>First Name <span class="required">*</span></label>
+      <input type="text" required />
+
+      <label>Last Name <span class="required">*</span></label>
+      <input type="text" required />
+
+      <label>Email Address</label>
+      <input type="email" />
+
+      <label>Phone Number</label>
+      <input type="tel" />
+
+      <strong><u>Check One</u></strong>
+      <label class="checkbox">
+        <input type="checkbox" id="appInProcess" />
+        Check here if this is an application in process and provide the information requested below
+      </label>
+      
+      <form id="uploadForm">
+
+      <label>I applied for</label>
+      <select>
+        <option value=""></option>
+        <option>Personal Loan</option>
+        <option>Auto Finance</option>
+      </select>
+
+      <label>Application or Reference Number</label>
+      <input type="text" />
+
+      <p class="or">OR</p>
+
+      <label class="checkbox">
+        <input type="checkbox" id="existingAccount" />
+        Check here if this is an existing account and provide the information requested below
+      </label>
+
+      <label>Document Reason</label>
+      <select>
+        <option value=""></option>
+        <option>Name Change</option>
+        <option>Identity Verification</option>
+        <option>Other</option>
+      </select>
+
+      <label>Last 4 of Account Number</label>
+      <input type="text" maxlength="4" />
+
+      <label>Attachments <span class="required">*</span></label>
+      <div class="upload-box" id="dropZone">
+        <div class="upload-message">
+            Drop files here, or <span class="browse">browse to attach files</span>
+        </div>
+        <input type="file" id="fileInput" multiple hidden />
+        <ul id="fileList"></ul>
+        </div>
+
+
+      <p class="file-note">
+        We accept files up to 5 MB in the following file formats: 
+        <em>.pdf, .tif, .jpg, .jpeg, .png, .doc, .docx</em>
+      </p>
+
+      <div class="legal">
+        The Milestone® Mastercard®, Destiny® Mastercard, Acima Classic Credit® Mastercard and Earniva® Business Mastercard are issued by The Bank of Missouri.<br />
+        The Indigo® Mastercard is issued by Celtic Bank.<br />
+        Concora Credit Inc. NMLS #1549514<br />
+        ©2025 Concora Credit Inc.
+      </div>
+
+      <div class="links">
+        <a href="https://concoracredit.myfinanceservice.com/privacyPolicy">Privacy Policy</a>
+        <a href="https://concoracredit.myfinanceservice.com/termsOfUse">Terms of Use</a>
+      </div>
+
+      <button type="submit" class="submit-btn">✔ Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
